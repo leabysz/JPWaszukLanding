@@ -1,0 +1,36 @@
+{
+  "header": {
+    "myName": "Hi, my name is",
+    "name": "Juan Pablo Waszuk",
+    "profesion": "I'm a psychotherapist.",
+    "btnAbout": "About me",
+    "btnMyPractice": "My practice",
+    "btnContact": "Contact"
+  },
+  "about": {
+    "aboutMe": "About me",
+    "p1": "I decided to study psychology when I realized it was a profound but also clear and direct way to ease pain in others. With time, and with the help of excellent professors and colleagues, I understood that focusing on helping my clients move toward their objectives and a life worth living was much more effective than wasting energy on minimizing suffering.",
+    "p2": "I received my Bachelor`s degree in Psychology from the Universidad Católica del Uruguay in 2019, after being awarded the highest grade for my thesis, an analysis of the interaction between borderline personality disorder and child abuse. After that, I started studying Action and Commitment Therapy under Christian Cabanne and Marcelo Álvarez, two of the most renowned ACT professionals in my country.",
+    "p3": "I worked as a teacher`s assistant and then as a professor for the Health Sciences Faculty of the Universidad Católica del Uruguay during 2019 and 2020. I also delved into academia, working as a research assistant for two doctoral dissertation projects, from 2019 until 2021.",
+    "p4": "My first professional experience as a psychotherapist came when I was offered to work in a free counseling project organized by the Methodist Church of Uruguay during the year 2020. The project was geared toward servicing people who were experiencing economic and psychological hardships due to the pandemic. In that year I also started my private practice in Montevideo, where I offer both in-person and virtual therapy services. In 2022 I expanded my practice to Tarariras, a small town in the department of Colonia.",
+    "btnText": "Resume",
+    "btnLink": "https://www.linkedin.com/in/jpwaszuk/"
+  },
+  "myPractice": {
+    "title": "My Practice",
+    "p1": "I work with my clients to create a valued and meaningful life, and assist them in organizing and enacting the changes needed to achieve it. I do this by helping them improve their relationship with their feelings and thoughts, increase their awareness of the present moment and reduce the influence or self-created narratives on their behavior.",
+    "p2": "I`ve helped people overcome depression, grief and trauma. My clients learn to overcome their anxiety. I choose to focus, not on reducing the symptoms, but in building a life worth living, even when faced with negative emotions that are common to all humans, such as sadness, fear and discouragement.",
+    "p3": "I have experience in career guidance processes, and have helped clients excel in their academic and professional endeavors. I provide my clients with time and resource management tools, skills and techniques while also working continuously in clarifying their ambitions and objectives.",
+    "p4": "Finally, I encourage my clients to build wholesome, committed interpersonal and communal relationships, be it with their friends, partners and colleagues. Success in this area is usually marked by improvements in the client`s communication and assertiveness skills, and by the increase in actions aligned with the chosen values."
+  },
+  "contact": {
+    "title": "Contact",
+    "p1": "Would you like to work with me? Awesome!",
+    "btnText": "Let's Talk",
+    "btnLink": "mailto:jpwaszuk@gmail.com"
+  }, 
+  "footer":{
+    "networkName1": "linkedin",
+    "networkURL1": "https://www.linkedin.com/in/jpwaszuk/"
+  }
+}

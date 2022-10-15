@@ -1,0 +1,36 @@
+{
+  "header": {
+    "myName": "Hola, mi nombre es",
+    "name": "Juan Pablo Waszuk",
+    "profesion": "Soy un Psicólogo",
+    "btnAbout": "Sobre mi",
+    "btnMyPractice": "Cómo Trabajo",
+    "btnContact": "Contacto"
+  },
+  "about": {
+    "aboutMe": "Sobre mi",
+    "p1": "Decidí estudiar psicología porque me parecía una manera profunda, clara y directa de ayudar a otros a lidiar con su dolor. Con la experiencia y la ayuda de excelentes profesores y colegas, entendí que concentrarme en ayudar a mis clientes a acercarse a sus objetivos y a una vida que valiera la pena era mucho más efectivo que gastar energía en minimizar el sufrimiento.",
+    "p2": "Obtuve mi título de Licenciado en Psicología por la Universidad Católica del Uruguay en 2019, luego de recibir la nota máxima en mi trabajo final de grado, un análisis de la relación entre el trastorno límite de la personalidad y el abuso infantil. Posteriormente, comencé a estudiar Terapia de Acción y Compromiso junto a Christian Cabanne y Marcelo Álvarez, dos referentes de la terapia en el país.",
+    "p3": "Fui ayudante de cátedra y luego profesor responsable de la Facultad de Ciencias de la Salud de la Universidad Católica del Uruguay durante 2019 y 2020, y también me vinculé con la investigación científica, obrando como aspirante de investigación para dos proyectos de tesis de Doctorado, desde 2019 hasta principios de 2021.",
+    "p4": "Comencé mi experiencia profesional en la clínica a través de un proyecto de acompañamiento psicológico gratuito para personas con vulnerabilidad socioeconómica organizado por la Iglesia Metodista del Uruguay durante el año 2020, en el marco de la emergencia sanitaria. En ese año también inauguré mi consultorio privado en Montevideo, desde donde ofrezco atención presencial y virtual, y desde 2022 atiendo también en Tarariras, un pueblo del departamento de Colonia.",
+    "btnText": "Resumen",
+    "btnLink": "https://www.linkedin.com/in/jpwaszuk/"
+  },
+  "myPractice": {
+    "title": "Cómo Trabajo",
+    "p1": "Propongo a mis clientes crear una vida valiosa y con sentido, y me ofrezco a ayudarles a organizar y caminar el proceso de cambio. Para esto, busco que ellos logren mejorar el relacionamiento con sus emociones y pensamientos, aumentar la consciencia del momento presente y reducir la influencia que tienen en su comportamiento las narrativas que creamos sobre nosotros mismos.",
+    "p2": "Acompaño clientes en procesos de depresión, duelo y trauma. También trabajo con problemas relacionados a la ansiedad. En ambos casos, el enfoque hace énfasis no en la reducción del síntoma, sino en la búsqueda y construcción de una vida que valga la pena ser vivida, incluso frente a la existencia de emociones negativas comunes a todo ser humano, como lo son la ansiedad, la tristeza y el desánimo.",
+    "p3": "Tengo experiencia en procesos de orientación vocacional, éxito académico y desarrollo profesional. Ayudo tanto a estudiantes como a profesionales a lograr una mejor priorización y planificación de sus objetivos, y una mejor organización de sus recursos.",
+    "p4": "Por último, impulso a mis clientes a lograr una vida de mayor plenitud en lo que refiere a sus relaciones interpersonales y comunitarias, sea en la vida de pareja, con amigos, colegas, superiores o personas a cargo. El progreso en esta área se manifiesta generalmente en mejoras en la comunicación, asertividad, empatía, honestidad y congruencia entre valores y conductas."
+  },
+  "contact": {
+    "title": "Contacto",
+    "p1": "¿Te gustaria tener más información? Genial!",
+    "btnText": "Hablemos",
+    "btnLink": "mailto:jpwaszuk@gmail.com"
+  }, 
+  "footer":{
+    "networkName1": "linkedin",
+    "networkURL1": "https://www.linkedin.com/in/jpwaszuk/"
+  }
+}
