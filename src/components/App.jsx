@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
+import ACT from './ACT/ACT';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import NavBar from './NavBar/NavBar';
@@ -31,6 +32,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <ACT />
       <Contact />
       <Footer />
     </PortfolioProvider>

@@ -5,6 +5,7 @@
     "profesion": "Soy un Psicólogo",
     "btnAbout": "Sobre mi",
     "btnMyPractice": "Cómo Trabajo",
+    "btnACT": "ACT",
     "btnContact": "Contacto"
   },
   "about": {
@@ -22,6 +23,13 @@
     "p2": "Acompaño clientes en procesos de depresión, duelo y trauma. También trabajo con problemas relacionados a la ansiedad. En ambos casos, el enfoque hace énfasis no en la reducción del síntoma, sino en la búsqueda y construcción de una vida que valga la pena ser vivida, incluso frente a la existencia de emociones negativas comunes a todo ser humano, como lo son la ansiedad, la tristeza y el desánimo.",
     "p3": "Tengo experiencia en procesos de orientación vocacional, éxito académico y desarrollo profesional. Ayudo tanto a estudiantes como a profesionales a lograr una mejor priorización y planificación de sus objetivos, y una mejor organización de sus recursos.",
     "p4": "Por último, impulso a mis clientes a lograr una vida de mayor plenitud en lo que refiere a sus relaciones interpersonales y comunitarias, sea en la vida de pareja, con amigos, colegas, superiores o personas a cargo. El progreso en esta área se manifiesta generalmente en mejoras en la comunicación, asertividad, empatía, honestidad y congruencia entre valores y conductas."
+  },
+  "ACT": {
+    "title":"Terapia de aceptación y compromiso",
+    "p1":"La Terapia de Aceptación y Compromiso (ACT, por sus siglas en inglés) fue desarrollada por Steven C. Hayes en los años 80, partiendo del conductismo radical de B. F. Skinner, tomando mucho contenido de la investigación en terapias cognitivo-conductuales de los años 60 y agregando una perspectiva del sufrimiento humano particular: en contraste con las teorías psicológicas que entienden la salud como un estado libre de sufrimiento para el ser humano, ACT postula que el funcionamiento normal de la mente humana muchas veces es destructivo y genera sufrimiento.",
+    "p2":"Para lograr una mejor interacción con los contenidos cognitivos y una vida más alineada a los valores del cliente, esta terapia ofrece un conjunto de intervenciones en base a estrategias de aceptación y mindfulness (contacto con el momento presente) junto con estrategias de compromiso y cambio conductual para aumentar la flexibilidad psicológica.",
+    "p3":"La flexibilidad psicológica es la capacidad de conectar y estar consciente del momento presente y decidir cambiar o continuar con una conducta de acuerdo a los valores del individuo y los estímulos del contexto.",
+    "p4":"Existen varias organizaciones comprometidas con la divulgación y la investigación sobre ACT. La Asociación para las Ciencias Conductuales Contextuales (ACBS) es la de mayor renombre y tamaño, con más de 9000 miembros. En su portal se puede encontrar información general sobre ACT, una lista de terapeutas adheridos a la organización y otros recursos como bibliografía relevante, protocolos de intervención, material audiovisual y acceso a la revista científica oficial de la asociación."
   },
   "contact": {
     "title": "Contacto",

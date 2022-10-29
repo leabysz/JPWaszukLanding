@@ -28,12 +28,11 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'SistemaContinuo.jpg',
-    title: 'Sistema Continuo',
-    info: 'Building a ecommerce for this brand was a fun and insteresting project',
-    info2:
-      'The page was one of the first solo project i have as freelancer. I always will gratefull with them for the trust. ',
-    url: 'https://sistemacontinuo.com.uy/',
+    img: '',
+    title: '',
+    info: '',
+    info2: '',
+    url: '',
     repo: '', // if no repo, the button will not show up
   },
 ];

@@ -39,20 +39,6 @@ const Header = () => {
                 </Link>
               </span>
             </p>
-            <p className="hero-cta" style={{ paddingRight: '1rem' }}>
-              <span className="cta-btn cta-btn--hero">
-                <Link to="projects" smooth duration={1000}>
-                  {t('header.btnMyPractice')}
-                </Link>
-              </span>
-            </p>
-            <p className="hero-cta">
-              <span className="cta-btn cta-btn--hero">
-                <Link to="contact" smooth duration={1000}>
-                  {t('header.btnContact')}
-                </Link>
-              </span>
-            </p>
           </div>
         </Fade>
       </Container>

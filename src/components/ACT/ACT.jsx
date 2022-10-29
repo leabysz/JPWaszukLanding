@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 
-const About = () => {
+const ACT = () => {
   const { t } = useTranslation('global');
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -21,10 +21,10 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about">
+    <section id="ACT">
       <Container>
-        <Title title={t('about.aboutMe')} />
-        <Row className="about-wrapper">
+        <Title title={t('ACT.title')} />
+        <Row className="act-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
@@ -35,21 +35,10 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text"> {t('about.p1')} </p>
-                <p className="about-wrapper__info-text"> {t('about.p2')} </p>
-                <p className="about-wrapper__info-text"> {t('about.p3')} </p>
-                <p className="about-wrapper__info-text"> {t('about.p4')} </p>
-
-                <span className="d-flex mt-3">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cta-btn cta-btn--resume"
-                    href={t('about.btnLink')}
-                  >
-                    {t('about.btnText')}
-                  </a>
-                </span>
+                <p className="about-wrapper__info-text"> {t('ACT.p1')} </p>
+                <p className="about-wrapper__info-text"> {t('ACT.p2')} </p>
+                <p className="about-wrapper__info-text"> {t('ACT.p3')} </p>
+                <p className="about-wrapper__info-text"> {t('ACT.p4')} </p>
               </div>
             </Fade>
           </Col>
@@ -59,4 +48,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default ACT;
