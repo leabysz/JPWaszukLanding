@@ -12,7 +12,7 @@ import '../style/main.scss';
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: window.location.search.includes('lang=es') ? 'es' : 'en',
+  lng: location.search.includes('lang=es') ? 'es' : 'en',
   resources: {
     es: {
       global: globalEs,
