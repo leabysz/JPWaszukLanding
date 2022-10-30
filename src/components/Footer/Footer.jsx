@@ -22,6 +22,14 @@ const Footer = () => {
           >
             <i className={`fa fa-${t('footer.networkName1') || 'refresh'} fa-inverse`} />
           </a>
+          <a
+            href={t('footer.networkURL2') || '/404'}
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label={t('footer.networkName2')}
+          >
+            <i className={`fa fa-${t('footer.networkName2') || 'refresh'} fa-inverse`} />
+          </a>
         </div>
         <hr />
         <p className="footer__text">© {new Date().getFullYear()}</p>

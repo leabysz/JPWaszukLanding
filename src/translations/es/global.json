@@ -2,7 +2,7 @@
   "header": {
     "myName": "Hola, mi nombre es",
     "name": "Juan Pablo Waszuk",
-    "profesion": "Soy un Psicólogo",
+    "profesion": "Soy psicólogo",
     "btnAbout": "Sobre mi",
     "btnMyPractice": "Cómo Trabajo",
     "btnACT": "ACT",
@@ -35,10 +35,16 @@
     "title": "Contacto",
     "p1": "¿Te gustaria tener más información? Genial!",
     "btnText": "Hablemos",
-    "btnLink": "mailto:jpwaszuk@gmail.com"
+    "btnLink": "mailto:jpwaszuk@gmail.com",
+    "inputName": "Nombre",
+    "inputEmail": "Email",
+    "inputTel": "Telefono",
+    "inputMessage": "Mensaje (Opcional)"
   }, 
   "footer":{
     "networkName1": "linkedin",
-    "networkURL1": "https://www.linkedin.com/in/jpwaszuk/"
+    "networkURL1": "https://www.linkedin.com/in/jpwaszuk/",
+    "networkName2": "envelope",
+    "networkURL2": "mailto:jpwaszuk@gmail.com"
   }
 }

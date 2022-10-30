@@ -19,17 +19,41 @@
     backface-visibility: hidden;
 
     &__text {
-      margin-bottom: 2.5rem;
-    }
-
-    &__text,
-    a {
+      margin-bottom: 3.5rem;
       font-size: 2.4rem;
 
       // Responsive for contact text
       @include respond(phone) {
         font-size: 2rem;
       }
+    }
+
+
+    button {
+      font-size: 2.4rem;
+      background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+      margin-top: 2rem;
+
+      // Responsive for contact text
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+
+    .formStyle {
+      font-size: 2.4rem;
+      padding: 0 2rem;
+      margin-bottom: 1rem;
+      width: 50rem;
+
+      // Responsive for contact text
+      @include respond(phone) {
+        font-size: 2rem;
+        width: auto;
+      }
+    }
+    .labelStyle{
+      width: 100%;
     }
   }
 }

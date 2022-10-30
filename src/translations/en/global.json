@@ -35,10 +35,16 @@
     "title": "Contact",
     "p1": "Would you like to work with me? Awesome!",
     "btnText": "Let's Talk",
-    "btnLink": "mailto:jpwaszuk@gmail.com"
+    "btnLink": "mailto:jpwaszuk@gmail.com",
+    "inputName": "Name",
+    "inputEmail": "Email",
+    "inputTel": "Phone",
+    "inputMessage": "Message (Optional)"
   }, 
   "footer":{
     "networkName1": "linkedin",
-    "networkURL1": "https://www.linkedin.com/in/jpwaszuk/"
+    "networkURL1": "https://www.linkedin.com/in/jpwaszuk/",
+    "networkName2": "envelope",
+    "networkURL2": "mailto:jpwaszuk@gmail.com"
   }
 }

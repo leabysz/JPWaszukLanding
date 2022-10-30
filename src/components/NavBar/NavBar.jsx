@@ -8,7 +8,12 @@ function NavBar() {
   const { i18n } = useTranslation('global');
   const { t } = useTranslation('global');
   return (
-    <Navbar className="divNav" expand="lg" style={{ display: 'flex', justifyContent: 'end' }}>
+    <Navbar
+      className="divNav"
+      sticky="top"
+      expand="lg"
+      style={{ display: 'flex', justifyContent: 'end', backgroundColor: 'white' }}
+    >
       <Navbar.Toggle
         aria-controls="basic-navbar-nav"
         style={{ backgroundImage: 'linear-gradient(135deg, #02aab0 0%, #00cdac 100%)' }}
@@ -16,7 +21,7 @@ function NavBar() {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={{ width: '100%' }}>
-          <Link to="projects" smooth duration={1000} className="nav-link">
+          <Link to="about" smooth duration={1000} className="nav-link">
             {t('header.btnAbout')}
           </Link>
           <Link to="projects" smooth duration={1000} className="nav-link">
