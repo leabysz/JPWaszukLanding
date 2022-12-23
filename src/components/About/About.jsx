@@ -28,7 +28,7 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename="profile.jpg" />
+                <AboutImg alt="profile picture" filename="07.jpg" />
               </div>
             </Fade>
           </Col>
@@ -39,7 +39,6 @@ const About = () => {
                 <p className="about-wrapper__info-text"> {t('about.p2')} </p>
                 <p className="about-wrapper__info-text"> {t('about.p3')} </p>
                 <p className="about-wrapper__info-text"> {t('about.p4')} </p>
-
                 <span className="d-flex mt-3">
                   <a
                     target="_blank"
