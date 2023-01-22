@@ -10,7 +10,6 @@ function NavBar() {
   const { t } = useTranslation('global');
   return (
     <Navbar
-      className="divNav"
       /* sticky="top" */
       expand="lg"
       style={{ display: 'flex', justifyContent: 'end', backgroundColor: 'white' }}
@@ -23,16 +22,40 @@ function NavBar() {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={{ width: '100%' }}>
-          <Link to="about" className="nav-link" onClick={() => setExpanded(false)}>
+          <Link
+            to="about"
+            smooth
+            duration={1000}
+            className="nav-link"
+            onClick={() => setExpanded(false)}
+          >
             {t('header.btnAbout')}
           </Link>
-          <Link to="projects" className="nav-link" onClick={() => setExpanded(false)}>
+          <Link
+            to="projects"
+            smooth
+            duration={1000}
+            className="nav-link"
+            onClick={() => setExpanded(false)}
+          >
             {t('header.btnMyPractice')}
           </Link>
-          <Link to="ACT" className="nav-link" onClick={() => setExpanded(false)}>
+          <Link
+            to="ACT"
+            smooth
+            duration={1000}
+            className="nav-link"
+            onClick={() => setExpanded(false)}
+          >
             {t('header.btnACT')}
           </Link>
-          <Link to="contact" className="nav-link" onClick={() => setExpanded(false)}>
+          <Link
+            to="contact"
+            smooth
+            duration={1000}
+            className="nav-link"
+            onClick={() => setExpanded(false)}
+          >
             {t('header.btnContact')}
           </Link>
         </Nav>
