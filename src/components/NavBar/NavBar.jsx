@@ -1,57 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 function NavBar() {
+  const [expanded, setExpanded] = useState(false);
   const { i18n } = useTranslation('global');
   const { t } = useTranslation('global');
   return (
     <Navbar
       className="divNav"
-      sticky="top"
+      /* sticky="top" */
       expand="lg"
       style={{ display: 'flex', justifyContent: 'end', backgroundColor: 'white' }}
+      expanded={expanded}
     >
       <Navbar.Toggle
         aria-controls="basic-navbar-nav"
-        style={{ backgroundImage: 'linear-gradient(135deg, #02aab0 0%, #00cdac 100%)' }}
         align="end"
+        onClick={() => setExpanded(expanded ? false : 'expanded')}
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={{ width: '100%' }}>
-          <Link to="about" smooth duration={1000} className="nav-link">
+          <Link to="about" className="nav-link" onClick={() => setExpanded(false)}>
             {t('header.btnAbout')}
           </Link>
-          <Link to="projects" smooth duration={1000} className="nav-link">
+          <Link to="projects" className="nav-link" onClick={() => setExpanded(false)}>
             {t('header.btnMyPractice')}
           </Link>
-          <Link to="ACT" smooth duration={1000} className="nav-link">
+          <Link to="ACT" className="nav-link" onClick={() => setExpanded(false)}>
             {t('header.btnACT')}
           </Link>
-          <Link to="contact" smooth duration={1000} className="nav-link">
+          <Link to="contact" className="nav-link" onClick={() => setExpanded(false)}>
             {t('header.btnContact')}
           </Link>
         </Nav>
         <Nav.Link style={{ widt: '100%' }}>
           <nav style={{ display: 'inline-flex' }}>
-            <button
-              type="button"
-              onClick={() => i18n.changeLanguage('en')}
-              className="cta-btn cta-btn--resume"
-              style={{ backgroundImage: 'linear-gradient(135deg, #02aab0 0%, #00cdac 100%)' }}
-            >
-              EN
-            </button>
-            <button
-              type="button"
-              onClick={() => i18n.changeLanguage('es')}
-              className="cta-btn cta-btn--resume"
-              style={{ backgroundImage: 'linear-gradient(135deg, #02aab0 0%, #00cdac 100%)' }}
-            >
-              ES
-            </button>
+            <span className="btnLenguage">
+              <button type="button" onClick={() => i18n.changeLanguage('en')} className="btnNav">
+                EN
+              </button>
+            </span>
+            <span className="btnLenguage">
+              <button type="button" onClick={() => i18n.changeLanguage('es')} className="btnNav">
+                ES
+              </button>
+            </span>
           </nav>
         </Nav.Link>
       </Navbar.Collapse>

@@ -1,5 +1,5 @@
 import React from 'react';
-import TagManager from 'react-gtm-module';
+// import TagManager from 'react-gtm-module';
 import { Helmet } from 'react-helmet';
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
@@ -11,12 +11,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 // import i18n (needs to be bundled ;))
-
+/* 
 const tagManagerArgs = {
   gtmId: 'GTM-PGT7638',
 };
 
-TagManager.initialize(tagManagerArgs);
+TagManager.initialize(tagManagerArgs); */
 
 i18next.init({
   interpolation: { escapeValue: false },
