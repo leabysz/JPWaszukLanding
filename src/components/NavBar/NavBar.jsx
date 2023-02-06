@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/interactive-supports-focus */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
@@ -61,13 +63,13 @@ function NavBar() {
         </Nav>
         <Nav.Link style={{ widt: '100%' }}>
           <nav style={{ display: 'inline-flex' }}>
-            <span className="btnLenguage">
-              <button type="button" onClick={() => i18n.changeLanguage('en')} className="btnNav">
+            <span className="btnLenguage" role="button" onClick={() => i18n.changeLanguage('en')}>
+              <button type="button" className="btnNav">
                 EN
               </button>
             </span>
-            <span className="btnLenguage">
-              <button type="button" onClick={() => i18n.changeLanguage('es')} className="btnNav">
+            <span className="btnLenguage" role="button" onClick={() => i18n.changeLanguage('es')}>
+              <button type="button" className="btnNav">
                 ES
               </button>
             </span>

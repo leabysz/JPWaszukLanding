@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
+import ProjectImg from '../Image/ProjectImg';
 
 const ACT = () => {
   const { t } = useTranslation('global');
@@ -28,7 +28,7 @@ const ACT = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename="03.jpg" />
+                <ProjectImg alt="profile picture" filename="ACT.jpg" />
               </div>
             </Fade>
           </Col>

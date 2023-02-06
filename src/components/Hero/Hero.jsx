@@ -25,7 +25,7 @@ const Header = () => {
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
-            {t('header.myName')} <span className="text-color-main"> {t('header.name')}</span>
+            <span className="text-color-main"> {t('header.name')}</span>
             <br />
             {t('header.profesion')}
           </h1>

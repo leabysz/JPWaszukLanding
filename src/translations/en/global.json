@@ -2,7 +2,7 @@
   "header": {
     "myName": "Hi, my name is",
     "name": "Juan Pablo Waszuk",
-    "profesion": "I'm a psychotherapist.",
+    "profesion": "Therapist",
     "btnAbout": "About me",
     "btnMyPractice": "My practice",
     "btnACT": "ACT",
@@ -33,7 +33,7 @@
   },
   "contact": {
     "title": "Contact",
-    "p1": "Would you like to work with me? Awesome!",
+    "p1": "If you would like to contact me, you can use the form below.",
     "btnText": "Let's Talk",
     "btnLink": "mailto:jpwaszuk@gmail.com",
     "inputName": "Name",
