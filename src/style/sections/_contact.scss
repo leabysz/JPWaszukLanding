@@ -44,12 +44,12 @@
       font-size: 2.4rem;
       padding: 0 2rem;
       margin-bottom: 1rem;
-      width: 50rem;
+      width: inherit;
 
       // Responsive for contact text
       @include respond(phone) {
         font-size: 2rem;
-        width: auto;
+        width: inherit;
       }
     }
 

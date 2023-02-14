@@ -39,7 +39,8 @@
     "inputName": "Nombre",
     "inputEmail": "Email",
     "inputTel": "Telefono",
-    "inputMessage": "Mensaje (Opcional)"
+    "inputMessage": "Mensaje (Opcional)",
+    "message": "Escribe tu mensaje aquí…"
   },
   "footer": {
     "networkName1": "linkedin",
