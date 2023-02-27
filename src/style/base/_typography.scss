@@ -39,14 +39,14 @@ a:hover {
 }
 
 .dark-blue-text {
-  color: $dark-blue-text !important;
+  color: $primary-color !important;
 }
 
 .text-color-main {
   /* background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-  color: black;
+  color: $secondary-color;
 
   // Responsive text purple style
   @include respond(phone) {

@@ -14,7 +14,7 @@ function NavBar() {
     <Navbar
       /* sticky="top" */
       expand="lg"
-      style={{ display: 'flex', justifyContent: 'end', backgroundColor: 'white' }}
+      style={{ display: 'flex', justifyContent: 'end' }}
       expanded={expanded}
       id="navbar"
     >
