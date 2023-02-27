@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
+import ProjectImg from '../Image/ProjectImg';
 
 const About = () => {
   const { t } = useTranslation('global');
@@ -26,9 +27,25 @@ const About = () => {
         <Title title={t('about.aboutMe')} />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename="aboutMe.jpg" />
+            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+              <div className="project-wrapper__image">
+                <Tilt
+                  options={{
+                    reverse: false,
+                    max: 8,
+                    perspective: 1000,
+                    scale: 1,
+                    speed: 300,
+                    transition: true,
+                    axis: null,
+                    reset: true,
+                    easing: 'cubic-bezier(.03,.98,.52,.99)',
+                  }}
+                >
+                  <div data-tilt className="thumbnail rounded">
+                    <ProjectImg alt="IMG" filename="aboutMe.jpg" />
+                  </div>
+                </Tilt>
               </div>
             </Fade>
           </Col>

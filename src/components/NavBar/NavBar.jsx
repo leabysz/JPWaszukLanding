@@ -16,6 +16,7 @@ function NavBar() {
       expand="lg"
       style={{ display: 'flex', justifyContent: 'end', backgroundColor: 'white' }}
       expanded={expanded}
+      id="navbar"
     >
       <Navbar.Toggle
         aria-controls="basic-navbar-nav"

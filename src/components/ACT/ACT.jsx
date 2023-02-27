@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import Title from '../Title/Title';
@@ -27,14 +28,28 @@ const ACT = () => {
         <Row className="act-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <ProjectImg alt="profile picture" filename="ACT.jpg" />
-              </div>
+              <Tilt
+                options={{
+                  reverse: false,
+                  max: 8,
+                  perspective: 1000,
+                  scale: 1,
+                  speed: 300,
+                  transition: true,
+                  axis: null,
+                  reset: true,
+                  easing: 'cubic-bezier(.03,.98,.52,.99)',
+                }}
+              >
+                <div className="about-wrapper__image">
+                  <ProjectImg alt="profile picture" filename="ACT.jpg" />
+                </div>
+              </Tilt>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="about-wrapper__info">
+              <div className="about-wrapper__info" style={{ textAlign: 'left' }}>
                 <p className="about-wrapper__info-text"> {t('ACT.p1')} </p>
                 <p className="about-wrapper__info-text"> {t('ACT.p2')} </p>
                 <p className="about-wrapper__info-text"> {t('ACT.p3')} </p>

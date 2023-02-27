@@ -84,19 +84,5 @@
   color: #272727;
 }
 
-.nav-link{
-  color: #272341 !important;
-  padding: 0 !important;
-  padding: 1rem !important;
-  font-weight: bolder;
-  cursor: pointer;
-  &:hover{
-    color: $secondary-color !important;
-  }
-  
-  vertical-align: baseline;
-  @include respond(phone) {
-    padding: 0rem;
-  }
-}
+
 
