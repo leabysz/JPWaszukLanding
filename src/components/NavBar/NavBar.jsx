@@ -22,6 +22,7 @@ function NavBar() {
         aria-controls="basic-navbar-nav"
         align="end"
         onClick={() => setExpanded(expanded ? false : 'expanded')}
+        id="btnToggle"
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={{ width: '100%' }}>
