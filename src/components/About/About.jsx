@@ -7,6 +7,11 @@ import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 
 const About = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+  };
   const { t } = useTranslation('global');
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -52,10 +57,32 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text"> {t('about.p1')} </p>
-                <p className="about-wrapper__info-text"> {t('about.p2')} </p>
-                <p className="about-wrapper__info-text"> {t('about.p3')} </p>
-                <p className="about-wrapper__info-text"> {t('about.p4')} </p>
+                <div>
+                  {' '}
+                  {expanded ? (
+                    <div>
+                      <p className="about-wrapper__info-text"> {t('about.p1')} </p>
+                      <p className="about-wrapper__info-text"> {t('about.p2')} </p>
+                      <p className="about-wrapper__info-text"> {t('about.p3')} </p>
+                      <p className="about-wrapper__info-text"> {t('about.p4')} </p>
+                    </div>
+                  ) : (
+                    <p className="about-wrapper__info-text">
+                      {' '}
+                      {t('about.p1')} <br />
+                      <span
+                        onClick={toggleExpanded}
+                        className="seeMoreAbout"
+                        role="link"
+                        onKeyDown={toggleExpanded}
+                        tabIndex={0}
+                      >
+                        {' '}
+                        See more..
+                      </span>{' '}
+                    </p>
+                  )}
+                </div>
                 <span className="d-flex mt-3">
                   <a
                     target="_blank"

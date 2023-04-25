@@ -81,4 +81,10 @@
     display: flex;
     align-items: center;
   }
+  .separador{
+    width: 60rem;
+    @include respond(phone){
+      width:-webkit-fill-available;
+    }
+  }
 }

@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 /* import { Link } from 'react-scroll'; */
 import { useTranslation } from 'react-i18next';
 import AboutImg from '../Image/AboutImg';
+import separador from '../../images/separador.png';
 
 const Header = () => {
   const { t } = useTranslation('global');
@@ -27,6 +28,8 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             <span className="text-color-main"> {t('header.name')}</span>
+            <br />
+            <img src={separador} alt="Separador" className="separador" />
             <br />
             {t('header.profesion')}
           </h1>
