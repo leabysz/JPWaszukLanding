@@ -7,6 +7,12 @@ import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 
 const ACT = () => {
+  const [expandedACT, setExpandedACT] = useState(false);
+
+  const toggleExpandedACT = () => {
+    setExpandedACT(!expandedACT);
+  };
+
   const { t } = useTranslation('global');
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -50,10 +56,31 @@ const ACT = () => {
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info" style={{ textAlign: 'left' }}>
-                <p className="about-wrapper__info-text"> {t('ACT.p1')} </p>
-                <p className="about-wrapper__info-text"> {t('ACT.p2')} </p>
-                <p className="about-wrapper__info-text"> {t('ACT.p3')} </p>
-                <p className="about-wrapper__info-text"> {t('ACT.p4')} </p>
+                {expandedACT ? (
+                  <div>
+                    <p className="about-wrapper__info-text"> {t('ACT.p1')} </p>
+                    <p className="about-wrapper__info-text"> {t('ACT.p2')} </p>
+                    <p className="about-wrapper__info-text"> {t('ACT.p3')} </p>
+                    <p className="about-wrapper__info-text"> {t('ACT.p4')} </p>
+                  </div>
+                ) : (
+                  <div>
+                    <p className="about-wrapper__info-text"> {t('ACT.p1')} </p>
+                    <p className="about-wrapper__info-text">
+                      {t('ACT.pC')}
+                      <span
+                        onClick={toggleExpandedACT}
+                        className="seeMoreACT"
+                        role="link"
+                        onKeyDown={toggleExpandedACT}
+                        tabIndex={0}
+                      >
+                        {' '}
+                        See more..
+                      </span>{' '}
+                    </p>
+                  </div>
+                )}
               </div>
             </Fade>
           </Col>

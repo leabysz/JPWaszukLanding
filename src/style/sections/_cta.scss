@@ -89,4 +89,12 @@
       }
     }
   }
+  .seeMoreACT{
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    &:hover{
+      color: $dark-grey;
+    }
+  }
 }

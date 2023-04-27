@@ -7,6 +7,12 @@ import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 
 const Projects = () => {
+  const [expandedProject, setExpandedProject] = useState(false);
+
+  const toggleExpandedProject = () => {
+    setExpandedProject(!expandedProject);
+  };
+
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -31,12 +37,31 @@ const Projects = () => {
             <Col lg={4} sm={12}>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
                 <div className="project-wrapper__text">
-                  <div>
-                    <p>{t('myPractice.p1')}</p>
-                    <p className="mb-4">{t('myPractice.p2')}</p>
-                    <p className="mb-4">{t('myPractice.p3')}</p>
-                    <p className="mb-4">{t('myPractice.p4')}</p>
-                  </div>
+                  {expandedProject ? (
+                    <div>
+                      <p>{t('myPractice.p1')}</p>
+                      <p className="mb-4">{t('myPractice.p2')}</p>
+                      <p className="mb-4">{t('myPractice.p3')}</p>
+                      <p className="mb-4">{t('myPractice.p4')}</p>
+                    </div>
+                  ) : (
+                    <div>
+                      <p>{t('myPractice.p1')}</p>
+                      <p className="mb-4">
+                        {t('myPractice.pC')}
+                        <span
+                          onClick={toggleExpandedProject}
+                          className="seeMoreProject"
+                          role="link"
+                          onKeyDown={toggleExpandedProject}
+                          tabIndex={0}
+                        >
+                          {' '}
+                          See more..
+                        </span>{' '}
+                      </p>
+                    </div>
+                  )}
                   {t('myPractice.link1') !== 'myPractice.link1' && (
                     <a
                       target="_blank"

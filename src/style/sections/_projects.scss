@@ -70,4 +70,12 @@
       }
     }
   }
+  .seeMoreProject{
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    &:hover{
+      color: $primary-color;
+    }
+  }
 }
