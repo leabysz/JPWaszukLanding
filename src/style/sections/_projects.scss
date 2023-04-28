@@ -7,10 +7,13 @@
     margin-top: 0;
     padding-top: 5rem;
   }
+  .containerProject{
+    @media (min-width: 1200px) {
+      max-width: 80%;
+    }
+  }
 
   .project-wrapper {
-
-
     .row {
       margin-bottom: 8rem;
 

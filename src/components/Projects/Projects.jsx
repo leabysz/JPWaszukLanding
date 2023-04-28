@@ -30,7 +30,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <Container>
+      <Container className="containerProject">
         <div className="project-wrapper">
           <Title title={t('myPractice.title')} />
           <Row>
