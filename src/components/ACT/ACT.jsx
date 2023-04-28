@@ -47,7 +47,7 @@ const ACT = () => {
                   easing: 'cubic-bezier(.03,.98,.52,.99)',
                 }}
               >
-                <div className="about-wrapper__image" style={{ paddingBottom: '4.3rem' }}>
+                <div className="about-wrapper__image">
                   <ProjectImg alt="profile picture" filename="ACT.jpg" />
                 </div>
               </Tilt>
@@ -55,17 +55,17 @@ const ACT = () => {
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="about-wrapper__info" style={{ textAlign: 'left' }}>
+              <div className="act-wrapper__info" style={{ textAlign: 'left' }}>
                 {expandedACT ? (
                   <div>
-                    <p className="about-wrapper__info-text"> {t('ACT.p1')} </p>
-                    <p className="about-wrapper__info-text"> {t('ACT.p2')} </p>
-                    <p className="about-wrapper__info-text"> {t('ACT.p3')} </p>
-                    <p className="about-wrapper__info-text"> {t('ACT.p4')} </p>
+                    <p className="act-wrapper__info-text"> {t('ACT.p1')} </p>
+                    <p className="act-wrapper__info-text"> {t('ACT.p2')} </p>
+                    <p className="act-wrapper__info-text"> {t('ACT.p3')} </p>
+                    <p className="act-wrapper__info-text"> {t('ACT.p4')} </p>
                   </div>
                 ) : (
                   <div>
-                    <p className="about-wrapper__info-text">
+                    <p className="act-wrapper__info-text">
                       {t('ACT.p1')}{' '}
                       <span
                         onClick={toggleExpandedACT}

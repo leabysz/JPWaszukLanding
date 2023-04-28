@@ -36,51 +36,53 @@ const Projects = () => {
           <Row>
             <Col lg={4} sm={12}>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-                <div className="project-wrapper__text">
-                  {expandedProject ? (
-                    <div>
-                      <p>{t('myPractice.p1')}</p>
-                      <p className="mb-4">{t('myPractice.p2')}</p>
-                      <p className="mb-4">{t('myPractice.p3')}</p>
-                      <p className="mb-4">{t('myPractice.p4')}</p>
-                    </div>
-                  ) : (
-                    <div>
-                      <p>
-                        {t('myPractice.p1')}{' '}
-                        <span
-                          onClick={toggleExpandedProject}
-                          className="seeMoreProject"
-                          role="link"
-                          onKeyDown={toggleExpandedProject}
-                          tabIndex={0}
-                        >
-                          {t('header.more')}
-                        </span>
-                      </p>
-                    </div>
-                  )}
-                  {t('myPractice.link1') !== 'myPractice.link1' && (
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--hero"
-                      href={t('myPractice.link1')}
-                    >
-                      {t('myPractice.link1text')}
-                    </a>
-                  )}
+                <div className="project-wrapper__info">
+                  <div className="project-wrapper__info-text">
+                    {expandedProject ? (
+                      <div>
+                        <p>{t('myPractice.p1')}</p>
+                        <p className="mb-4">{t('myPractice.p2')}</p>
+                        <p className="mb-4">{t('myPractice.p3')}</p>
+                        <p className="mb-4">{t('myPractice.p4')}</p>
+                      </div>
+                    ) : (
+                      <div>
+                        <p>
+                          {t('myPractice.p1')}{' '}
+                          <span
+                            onClick={toggleExpandedProject}
+                            className="seeMoreProject"
+                            role="link"
+                            onKeyDown={toggleExpandedProject}
+                            tabIndex={0}
+                          >
+                            {t('header.more')}
+                          </span>
+                        </p>
+                      </div>
+                    )}
+                    {t('myPractice.link1') !== 'myPractice.link1' && (
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--hero"
+                        href={t('myPractice.link1')}
+                      >
+                        {t('myPractice.link1text')}
+                      </a>
+                    )}
 
-                  {t('myPractice.link2') !== 'myPractice.link2' && (
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn text-color-main"
-                      href={t('myPractice.link2')}
-                    >
-                      {t('myPractice.link2text')}
-                    </a>
-                  )}
+                    {t('myPractice.link2') !== 'myPractice.link2' && (
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn text-color-main"
+                        href={t('myPractice.link2')}
+                      >
+                        {t('myPractice.link2text')}
+                      </a>
+                    )}
+                  </div>
                 </div>
               </Fade>
             </Col>

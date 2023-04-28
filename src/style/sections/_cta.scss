@@ -52,6 +52,7 @@
 
       @include respond(phone) {
         align-items: center;
+        padding-top: 4.10rem !important;
       }
 
       &-text {
