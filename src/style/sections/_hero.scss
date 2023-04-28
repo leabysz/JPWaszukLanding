@@ -82,7 +82,7 @@
     align-items: center;
   }
   .separador{
-    width: 60rem;
+    width: 37rem;
     @include respond(phone){
       width:-webkit-fill-available;
     }
