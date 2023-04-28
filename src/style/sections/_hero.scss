@@ -30,6 +30,7 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10.4rem;
 
     @include respond(tab-port) {
       padding-bottom: 6.4rem;
@@ -42,7 +43,7 @@
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
-    margin-bottom: 16.2rem;
+    margin-bottom: 6.2rem;
     text-align: center;
 
     @include respond(tab-land) {
