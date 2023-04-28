@@ -32,7 +32,7 @@ const About = () => {
       <Container>
         <Title title={t('about.aboutMe')} />
         <Row className="about-wrapper">
-          <Col md={6} sm={12}>
+          <Col lg={7} sm={12}>
             <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="project-wrapper__image">
                 <Tilt
@@ -55,7 +55,7 @@ const About = () => {
               </div>
             </Fade>
           </Col>
-          <Col md={6} sm={12}>
+          <Col lg={5} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 {' '}
