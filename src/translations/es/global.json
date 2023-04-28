@@ -6,7 +6,8 @@
     "btnAbout": "Sobre mí",
     "btnMyPractice": "Cómo trabajo",
     "btnACT": "ACT",
-    "btnContact": "Contacto"
+    "btnContact": "Contacto",
+    "more": "Ver más..."
   },
   "about": {
     "aboutMe": "Sobre mí",
@@ -15,7 +16,8 @@
     "p3": "Fui ayudante de cátedra y luego profesor responsable de la Facultad de Ciencias de la Salud de la Universidad Católica del Uruguay durante 2019 y 2020, y también me vinculé con la investigación científica, obrando como aspirante de investigación para dos proyectos de tesis de Doctorado, desde 2019 hasta principios de 2021.",
     "p4": "Comencé mi experiencia profesional en la clínica a través de un proyecto de acompañamiento psicológico gratuito para personas con vulnerabilidad socioeconómica organizado por la Iglesia Metodista del Uruguay durante el año 2020, en el marco de la emergencia sanitaria. En ese año también inauguré mi consultorio privado en Montevideo, desde donde ofrezco atención presencial y virtual, y desde 2022 atiendo también en Tarariras, un pueblo del departamento de Colonia.",
     "btnText": "CV",
-    "btnLink": "https://www.linkedin.com/in/jpwaszuk/"
+    "btnLink": "https://www.linkedin.com/in/jpwaszuk/",
+    "more": "Ver más..."
   },
   "myPractice": {
     "title": "Cómo Trabajo",

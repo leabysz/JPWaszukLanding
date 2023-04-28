@@ -65,9 +65,8 @@ const ACT = () => {
                   </div>
                 ) : (
                   <div>
-                    <p className="about-wrapper__info-text"> {t('ACT.p1')} </p>
                     <p className="about-wrapper__info-text">
-                      {t('ACT.p2')}
+                      {t('ACT.p1')}{' '}
                       <span
                         onClick={toggleExpandedACT}
                         className="seeMoreACT"
@@ -75,8 +74,7 @@ const ACT = () => {
                         onKeyDown={toggleExpandedACT}
                         tabIndex={0}
                       >
-                        {' '}
-                        See more..
+                        {t('header.more')}
                       </span>{' '}
                     </p>
                   </div>

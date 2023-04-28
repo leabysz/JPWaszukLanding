@@ -79,7 +79,7 @@ const About = () => {
                         tabIndex={0}
                       >
                         {' '}
-                        See more...
+                        {t('header.more')}
                       </span>{' '}
                     </p>
                   </div>

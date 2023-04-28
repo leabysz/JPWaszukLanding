@@ -55,7 +55,7 @@ const Projects = () => {
                           onKeyDown={toggleExpandedProject}
                           tabIndex={0}
                         >
-                          See more...
+                          {t('header.more')}
                         </span>
                       </p>
                     </div>

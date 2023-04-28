@@ -6,7 +6,8 @@
     "btnAbout": "About me",
     "btnMyPractice": "My practice",
     "btnACT": "ACT",
-    "btnContact": "Contact"
+    "btnContact": "Contact",
+    "more": "See more..."
   },
   "about": {
     "aboutMe": "About me",
@@ -16,7 +17,8 @@
     "p4": "My first professional experience as a psychotherapist came when I was offered to work in a free counseling project organized by the Methodist Church of Uruguay during the year 2020. The project was geared toward servicing people who were experiencing economic and psychological hardship due to the pandemic. In that year I also started my private practice in Montevideo, where I offer both in-person and virtual therapy services. In 2022, I expanded my practice to Tarariras, a small town in the department of Colonia.",
     "pC": "I received my Bachelor's degree in Psychology from the Universidad Católica del Uruguay in 2019, after being awarded the highest grade for my thesis, an analysis of the ",
     "btnText": "Resume",
-    "btnLink": "https://www.linkedin.com/in/jpwaszuk/"
+    "btnLink": "https://www.linkedin.com/in/jpwaszuk/",
+    "more": "Ver más..."
   },
   "myPractice": {
     "title": "My Practice",
