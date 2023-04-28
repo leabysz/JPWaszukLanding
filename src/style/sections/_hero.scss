@@ -45,6 +45,7 @@
     font-weight: 700;
     margin-bottom: 8.2rem;
     text-align: center;
+    line-height: 1 !important;
 
     @include respond(tab-land) {
       font-size: 4rem;
