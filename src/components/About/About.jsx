@@ -68,9 +68,9 @@ const About = () => {
                   </div>
                 ) : (
                   <div>
-                    <p className="about-wrapper__info-text"> {t('about.p1')} </p>
                     <p className="about-wrapper__info-text">
-                      {t('about.pC')}
+                      {' '}
+                      {t('about.p1')}{' '}
                       <span
                         onClick={toggleExpanded}
                         className="seeMoreAbout"
@@ -79,7 +79,7 @@ const About = () => {
                         tabIndex={0}
                       >
                         {' '}
-                        See more..
+                        See more...
                       </span>{' '}
                     </p>
                   </div>

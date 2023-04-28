@@ -46,9 +46,8 @@ const Projects = () => {
                     </div>
                   ) : (
                     <div>
-                      <p>{t('myPractice.p1')}</p>
-                      <p className="mb-4">
-                        {t('myPractice.pC')}
+                      <p>
+                        {t('myPractice.p1')}{' '}
                         <span
                           onClick={toggleExpandedProject}
                           className="seeMoreProject"
@@ -56,9 +55,8 @@ const Projects = () => {
                           onKeyDown={toggleExpandedProject}
                           tabIndex={0}
                         >
-                          {' '}
-                          See more..
-                        </span>{' '}
+                          See more...
+                        </span>
                       </p>
                     </div>
                   )}

@@ -47,7 +47,7 @@ const ACT = () => {
                   easing: 'cubic-bezier(.03,.98,.52,.99)',
                 }}
               >
-                <div className="about-wrapper__image">
+                <div className="about-wrapper__image" style={{ paddingBottom: '4.3rem' }}>
                   <ProjectImg alt="profile picture" filename="ACT.jpg" />
                 </div>
               </Tilt>
@@ -67,7 +67,7 @@ const ACT = () => {
                   <div>
                     <p className="about-wrapper__info-text"> {t('ACT.p1')} </p>
                     <p className="about-wrapper__info-text">
-                      {t('ACT.pC')}
+                      {t('ACT.p2')}
                       <span
                         onClick={toggleExpandedACT}
                         className="seeMoreACT"

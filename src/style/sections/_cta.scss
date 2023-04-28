@@ -16,10 +16,7 @@
     clip-path: none;
   }
 
-  padding-top: 15rem;
   .act-wrapper {
-    
-
     @include respond(phone) {
       margin-bottom: 0rem;
     }

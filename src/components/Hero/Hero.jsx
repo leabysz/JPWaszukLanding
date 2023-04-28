@@ -36,11 +36,8 @@ const Header = () => {
         </Fade>
         <Fade bottom duration={1000} delay={600} distance="30px">
           <div className="hero-image">
-            {isMobile ? (
-              <AboutImg alt="profile picture" filename="landingV.jpg" />
-            ) : (
-              <AboutImg alt="profile picture" filename="landingH.jpg" />
-            )}
+            {isMobile && <AboutImg alt="profile picture" filename="landingV.jpg" />}
+            {!isMobile && <AboutImg alt="profile picture" filename="landingH.jpg" />}
           </div>
         </Fade>
       </Container>
