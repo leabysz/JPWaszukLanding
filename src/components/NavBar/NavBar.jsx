@@ -10,12 +10,6 @@ function NavBar() {
   const [expanded, setExpanded] = useState(false);
   const { i18n } = useTranslation('global');
   const { t } = useTranslation('global');
-  const containerStyle = {
-    opacity: expanded ? 0 : 1,
-    height: expanded ? 0 : 'auto',
-    overflow: 'hidden',
-    transition: 'opacity 1.0s ease, height 1.0s ease',
-  };
   return (
     <Navbar
       /* sticky="top" */
@@ -30,6 +24,20 @@ function NavBar() {
         onClick={() => setExpanded(expanded ? false : 'expanded')}
         id="btnToggle"
       />
+      <Nav.Link style={expanded ? { display: 'none' } : { display: 'block' }}>
+        <nav style={{ display: 'inline-flex' }}>
+          <span className="btnLenguage" role="button" onClick={() => i18n.changeLanguage('en')}>
+            <button type="button" className="btnNav">
+              EN
+            </button>
+          </span>
+          <span className="btnLenguage" role="button" onClick={() => i18n.changeLanguage('es')}>
+            <button type="button" className="btnNav">
+              ES
+            </button>
+          </span>
+        </nav>
+      </Nav.Link>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={{ width: '100%' }}>
           <Link
@@ -84,20 +92,6 @@ function NavBar() {
           </nav>
         </Nav.Link>
       </Navbar.Collapse>
-      <Nav.Link style={containerStyle}>
-        <nav style={{ display: 'inline-flex' }}>
-          <span className="btnLenguage" role="button" onClick={() => i18n.changeLanguage('en')}>
-            <button type="button" className="btnNav">
-              EN
-            </button>
-          </span>
-          <span className="btnLenguage" role="button" onClick={() => i18n.changeLanguage('es')}>
-            <button type="button" className="btnNav">
-              ES
-            </button>
-          </span>
-        </nav>
-      </Nav.Link>
     </Navbar>
   );
 }
