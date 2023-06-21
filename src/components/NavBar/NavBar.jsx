@@ -10,11 +10,17 @@ function NavBar() {
   const [expanded, setExpanded] = useState(false);
   const { i18n } = useTranslation('global');
   const { t } = useTranslation('global');
+  const containerStyle = {
+    opacity: expanded ? 0 : 1,
+    height: expanded ? 0 : 'auto',
+    overflow: 'hidden',
+    transition: 'opacity 1.0s ease, height 1.0s ease',
+  };
   return (
     <Navbar
       /* sticky="top" */
       expand="lg"
-      style={{ display: 'flex', justifyContent: 'end' }}
+      /* style={{ display: 'flex', justifyContent: 'end' }} */
       expanded={expanded}
       id="navbar"
     >
@@ -63,7 +69,7 @@ function NavBar() {
             {t('header.btnContact')}
           </Link>
         </Nav>
-        <Nav.Link style={{ widt: '100%' }}>
+        <Nav.Link style={expanded ? { display: 'block' } : { display: 'none' }}>
           <nav style={{ display: 'inline-flex' }}>
             <span className="btnLenguage" role="button" onClick={() => i18n.changeLanguage('en')}>
               <button type="button" className="btnNav">
@@ -78,6 +84,20 @@ function NavBar() {
           </nav>
         </Nav.Link>
       </Navbar.Collapse>
+      <Nav.Link style={containerStyle}>
+        <nav style={{ display: 'inline-flex' }}>
+          <span className="btnLenguage" role="button" onClick={() => i18n.changeLanguage('en')}>
+            <button type="button" className="btnNav">
+              EN
+            </button>
+          </span>
+          <span className="btnLenguage" role="button" onClick={() => i18n.changeLanguage('es')}>
+            <button type="button" className="btnNav">
+              ES
+            </button>
+          </span>
+        </nav>
+      </Nav.Link>
     </Navbar>
   );
 }

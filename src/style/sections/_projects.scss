@@ -7,7 +7,8 @@
     margin-top: 0;
     padding-top: 5rem;
   }
-  .containerProject{
+
+  .containerProject {
     @media (min-width: 1200px) {
       max-width: 80%;
     }
@@ -21,42 +22,45 @@
         margin-bottom: 4rem;
       }
     }
+
     &__info {
       display: flex;
       height: 100%;
       justify-content: center;
       flex-direction: column;
+
       &-text {
         text-align: left;
-  
+
         @include respond(phone) {
           margin-bottom: 4.3rem !important;
           text-align: justify;
         }
+
         @include respond(tab-land) {
           margin-bottom: 4.8rem;
           text-align: justify;
         }
-  
+
         &-title {
           font-weight: bold;
           margin-bottom: 1.8rem;
           font-size: $mid-font-size;
-  
+
           @include respond(phone) {
             font-size: 2rem;
           }
         }
-  
-        & p > a {
+
+        & p>a {
           color: $secondary-color;
         }
       }
     }
-    
+
 
     &__image {
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
 
       @include respond(tab-land) {
@@ -80,11 +84,13 @@
       }
     }
   }
-  .seeMoreProject{
+
+  .seeMoreProject {
     cursor: pointer;
     font-weight: bolder;
     text-decoration-line: underline;
-    &:hover{
+
+    &:hover {
       color: $primary-color;
     }
   }

@@ -15,7 +15,12 @@
     -webkit-clip-path: none;
     clip-path: none;
   }
-
+  .containerCTA{
+    @media (min-width: 1200px) {
+      max-width: 80%;
+    }
+  }
+  
   .act-wrapper {
     @include respond(phone) {
       margin-bottom: 0rem;

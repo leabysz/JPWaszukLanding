@@ -29,10 +29,10 @@ const ACT = () => {
 
   return (
     <section id="ACT">
-      <Container>
+      <Container className="containerCTA">
         <Title title={t('ACT.title')} />
         <Row className="act-wrapper">
-          <Col md={6} sm={12}>
+          <Col md={7} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <Tilt
                 options={{
@@ -53,7 +53,7 @@ const ACT = () => {
               </Tilt>
             </Fade>
           </Col>
-          <Col md={6} sm={12}>
+          <Col md={5} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="act-wrapper__info" style={{ textAlign: 'left' }}>
                 {expandedACT ? (

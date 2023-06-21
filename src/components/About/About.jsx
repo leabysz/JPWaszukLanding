@@ -29,7 +29,7 @@ const About = () => {
 
   return (
     <section id="about">
-      <Container>
+      <Container className="containerAbout">
         <Title title={t('about.aboutMe')} />
         <Row className="about-wrapper">
           <Col lg={7} sm={12}>
