@@ -3,8 +3,10 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 /* import { Link } from 'react-scroll'; */
 import { useTranslation } from 'react-i18next';
+import FluidImage from '../FluidImg/fluidimg';
 import AboutImg from '../Image/AboutImg';
 import separador from '../../images/separador.png';
+import profileImg from '../../images/landingH.jpg';
 
 const Header = () => {
   const { t } = useTranslation('global');
@@ -37,7 +39,7 @@ const Header = () => {
         <Fade bottom duration={1000} delay={600} distance="30px">
           <div className="hero-image">
             {isMobile && <AboutImg alt="profile picture" filename="landingH.jpg" />}
-            {!isMobile && <AboutImg alt="profile picture" filename="landingH.jpg" />}
+            {!isMobile && <FluidImage src={profileImg} alt="Your Image Alt Text" />}
           </div>
         </Fade>
       </Container>
