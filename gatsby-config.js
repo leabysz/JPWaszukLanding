@@ -26,7 +26,7 @@ module.exports = {
         short_name: `Juan Pablo`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#02aab0`,
+        theme_color: `#9C6D43`,
         display: `standalone`,
         icon: 'src/images/favicon.png',
       },
