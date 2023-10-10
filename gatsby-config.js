@@ -28,7 +28,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: ``,
         display: `standalone`,
-        icon: 'src/images/favicon.png',
+        icon: 'src/images/profile.jpg',
       },
     },
   ],
