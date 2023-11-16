@@ -32,7 +32,7 @@ const Projects = () => {
     <section id="projects">
       <Container className="containerProject">
         <div className="project-wrapper">
-          <Title title={t('myPractice.title')} />
+          <Title title={t('about.title')} />
           <Row>
             <Col lg={4} sm={12}>
               <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
@@ -40,15 +40,15 @@ const Projects = () => {
                   <div className="project-wrapper__info-text">
                     {expandedProject ? (
                       <div>
-                        <p>{t('myPractice.p1')}</p>
-                        <p className="mb-4">{t('myPractice.p2')}</p>
-                        <p className="mb-4">{t('myPractice.p3')}</p>
-                        <p className="mb-4">{t('myPractice.p4')}</p>
+                        <p>{t('about.p1')}</p>
+                        <p className="mb-4">{t('about.p2')}</p>
+                        <p className="mb-4">{t('about.p3')}</p>
+                        <p className="mb-4">{t('about.p4')}</p>
                       </div>
                     ) : (
                       <div>
                         <p>
-                          {t('myPractice.p1')}{' '}
+                          {t('about.p1')}{' '}
                           <span
                             onClick={toggleExpandedProject}
                             className="seeMoreProject"

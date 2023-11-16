@@ -30,7 +30,7 @@ const About = () => {
   return (
     <section id="about">
       <Container className="containerAbout">
-        <Title title={t('about.aboutMe')} />
+        <Title title={t('myPractice.title')} />
         <Row className="about-wrapper">
           <Col lg={7} sm={12}>
             <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
@@ -61,16 +61,16 @@ const About = () => {
                 {' '}
                 {expanded ? (
                   <div>
-                    <p className="about-wrapper__info-text"> {t('about.p1')} </p>
-                    <p className="about-wrapper__info-text"> {t('about.p2')} </p>
-                    <p className="about-wrapper__info-text"> {t('about.p3')} </p>
-                    <p className="about-wrapper__info-text"> {t('about.p4')} </p>
+                    <p className="about-wrapper__info-text"> {t('myPractice.p1')} </p>
+                    <p className="about-wrapper__info-text"> {t('myPractice.p2')} </p>
+                    <p className="about-wrapper__info-text"> {t('myPractice.p3')} </p>
+                    <p className="about-wrapper__info-text"> {t('myPractice.p4')} </p>
                   </div>
                 ) : (
                   <div>
                     <p className="about-wrapper__info-text">
                       {' '}
-                      {t('about.p1')}{' '}
+                      {t('myPractice.p1')}{' '}
                       <span
                         onClick={toggleExpanded}
                         className="seeMoreAbout"
